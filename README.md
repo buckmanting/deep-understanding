@@ -7,8 +7,8 @@ A composable learning toolkit for Codex. `deep-understanding` is the teaching ro
 These are portable `SKILL.md` packages. Clone the repository, choose one destination for your platform and scope, then copy all six folders from `skills/`. Avoid installing duplicate copies with the same names at the same scope: each platform resolves collisions differently.
 
 ```bash
-git clone https://github.com/buckmanting/deep-understanding-skills.git
-cd deep-understanding-skills
+git clone https://github.com/buckmanting/deep-understanding.git
+cd deep-understanding
 ```
 
 ### Codex
