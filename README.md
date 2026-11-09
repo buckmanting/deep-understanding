@@ -45,9 +45,7 @@ Review the evidence behind this health claim with $evidence-review.
 From a checkout containing these files:
 
 ```bash
-for skill in skills/*; do
-  python3 "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" "$skill"
-done
+./tests/validate.sh
 ```
 
-The validator checks Codex skill conventions; it does not evaluate teaching quality.
+The script uses Codex's validator when its Python YAML dependency is available, otherwise it runs the same structural checks through the system YAML parser. It does not evaluate teaching quality.
