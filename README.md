@@ -4,6 +4,29 @@ A composable learning toolkit for Codex. `deep-understanding` is the teaching ro
 
 ## Install
 
+### Recommended: `npx skills`
+
+The [Skills CLI](https://www.skills.sh/docs) installs this repository into the right directory for your chosen agent. It also handles all six skills together.
+
+```bash
+# Preview the available skills first
+npx skills add buckmanting/deep-understanding --list
+
+# Install all six into the current project for one agent
+npx skills add buckmanting/deep-understanding --skill '*' --agent codex
+```
+
+Replace `codex` with `claude-code`, `cursor`, `gemini-cli`, or `github-copilot`. To install for multiple agents in one project, repeat `--agent`:
+
+```bash
+npx skills add buckmanting/deep-understanding --skill '*' \
+  --agent codex --agent claude-code --agent cursor
+```
+
+Add `--global` to install for all projects for your user, and `--yes` only when you have already inspected the repository and want a non-interactive install. Check installed skills with `npx skills list`.
+
+### Manual installation
+
 These are portable `SKILL.md` packages. Clone the repository, choose one destination for your platform and scope, then copy all six folders from `skills/`. Avoid installing duplicate copies with the same names at the same scope: each platform resolves collisions differently.
 
 ```bash
